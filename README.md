@@ -3,7 +3,7 @@
 
 ####Basic setup
 
-1. [http://git-scm.com/downloads](Download) and install Git for your platform
+1. [Download](http://git-scm.com/downloads) and install Git for your platform
 
   ![default settings](images/git-scm1.png "Use default settings")
 
@@ -15,7 +15,7 @@
 
 
 
-2. [http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html](Download) and install PuTTY, if necessary
+2. [Download](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) and install PuTTY, if necessary
 
 
 3. Run PuTTYgen, and create or import your SSH key
@@ -41,7 +41,11 @@
 *Optional* [Download](https://code.google.com/p/tortoisegit/wiki/Download) and install TortoiseGIT (Optional)
   - This is the easiest way to configure SSH
 
-Mac OS X : [Atlassian Sourcetree]() and [Tower Git](http://www.git-tower.com/) both have built-in support for Git-flow
+
+*Alternatively:* [Atlassian Sourcetree](http://sourcetreeapp.com)
+
+
+Mac OS X : [Tower Git](http://www.git-tower.com/) both have built-in support for Git-flow
 
 
 ####Links
