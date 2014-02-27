@@ -14,7 +14,7 @@
   ![use plink](images/git-scm3.png "Choose PLink as SSH helper")
   * PuTTY's plink integrates better with Windows
 
-  ![newline format](images/git-scm3.png "Set format for line endings")
+  ![newline format](images/git-scm4.png "Set format for line endings")
   * Default setting is fine
 
 
@@ -28,9 +28,9 @@
   
   - click **Generate**
   - click **Save private key**, and store your key somewhere safe.
-  - select the public key in the text area, and copy to the clipboard
   
   ![copy public key to clipboard](images/puttygen3.png "select the public key in the text area, and copy to the clipboard")
+  - select the public key in the text area, and copy to the clipboard
 
 
 4. Add the SSH key to your Springloops account
@@ -61,25 +61,41 @@ Mac OS X : [Tower Git](http://www.git-tower.com/) both have built-in support for
 
 ####Git-flow setup (Windows)
 
-1. Open a command prompt, and clone the git-flow repo.
+1. download [libiconv2.dll, libintl3.dll and getopt.exe](bin/linux-ng.zip) from the util-linux-ng package, and place them all in the Git bin folder (typically "C:\Program Files (x86)\Git\bin")
+
+2. Open a Command Prompt as Administrator (right-click \> *Run as Administrator*), and clone the git-flow repo.
   - You can clone it into any directory, but keep in mind that this is the permanent home of the script files you need to use git-flow. It is not a temporary directory.
 
   ```
   git clone --recursive https://github.com/nvie/gitflow.git
   ```
 
-2. download [libiconv2.dll, libintl3.dll and getopt.exe]() from the linux-ng package, and place them all in the Git bin folder (typically "C:\Program Files (x86)\Git\bin")
+3. Install git-flow extension
 
-
+  ```
+  cd gitflow
+  contrib\msysgit-install.cmd
+  ```
 
 
 
 
 ####Clone the easyad2 repo from Springloops:
-  - This is the main repo for EasyAd
+  
+  Open a Command Prompt, and navigate to the root of your work folder
 
   ```
-  git clone ssh://sls@slsapp.com:1234/duplo/easyad2.git
+  git clone ssh://sls@slsapp.com:1234/duplo/easyad2.git easyad
   ```
 
 
+  Initialize as git-flow repository
+
+  ```
+  cd easyad
+  git flow init
+  ```
+  Hit \<Enter\> at each prompt to accept defaults
+
+
+  Done!
