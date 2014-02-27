@@ -1,0 +1,43 @@
+1. Go to http://git-scm.com and download Git
+1.1 Open/Install the downloaded file
+1.2 Licence, Click Next
+1.3 Components, Click Next
+1.4 Select option (Windows) "Run from windows command prompt" OR "Run Git and include Unix tools from the Windows command prompt"  
+1.5 Use (Tortoise)Plink, Click Next
+1.6 Checkout windows style, Click Next
+1.7 Click Finish
+
+2. (Windows) Copy files from Dropbox/Delt/Git to C:\Program Files (x86)\Git\bin
+
+3. Generate (if you don't have one) public SSH key from instructions on https://help.github.com/articles/generating-ssh-keys or (windows) using puttygen http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe
+
+4. Install tortoise GIT
+4.1 Select next with all default options
+
+5. Install git-flow extension
+5.1 Open command prompt with admin privilegies
+5.2 cd to a folder where you want to put the gitflow extension folder.
+
+git clone --recursive git://github.com/nvie/gitflow.git
+cd gitflow
+contrib\msysgit-install.cmd "C:\Program Files (x86)\Git"
+(change path above to the path you installed Git)
+
+
+6. Go to your localhost root folder, right click and choose Git clone...
+6.1 Enter repo url ssh://sls@slsapp.com:1234/duplo/easyad2.git
+6.2 Set local folder (change easyad2 to easyad)
+6.3 Load puttykey and find the key you generated in step 3.
+6.4 Click Ok, enter your ssh key passprase if prompted.
+6.5 Click Yes/Ja if prompted.
+6.6 Go to 7 while waiting
+
+7. Login to springloops, go to EasyAd2 project, and Source->Commits
+7.1 Click Access Details..
+7.2 Click SSH -> Manage. 
+7.3 Click Add a new key, and add the public version of the key you created in step 3. (Load the key in puttygen and copy the public key)
+
+8. When 6.6 is ready (you might get timeout error on 100% during 6.6).
+8.1 Open command prompt and cd to the local folder from 6.2
+git flow init
+8.2 Click enter to select default value on all steps.
