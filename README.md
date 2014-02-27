@@ -11,8 +11,8 @@
 
   ![click Generate](images/puttygen1.png "click Generate")
   
-  - click <Generate>
-  - click <Save private key>, and store your key somewhere safe.
+  - click *Generate*
+  - click *Save private key*, and store your key somewhere safe.
   - select the public key in the text area, and copy to the clipboard
   
   ![copy public key to clipboard](images/puttygen3.png "select the public key in the text area, and copy to the clipboard")
