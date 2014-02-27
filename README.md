@@ -6,12 +6,16 @@
 1. [Download](http://git-scm.com/downloads) and install Git for your platform
 
   ![default settings](images/git-scm1.png "Use default settings")
+  Use default settings
 
   ![use from cmd](images/git-scm2.png "Use git from Command Prompt")
+  *Run Git from Command Prompt* is preferred
 
   ![use plink](images/git-scm3.png "Choose PLink as SSH helper")
+  * PuTTY's plink integrates better with Windows
 
   ![newline format](images/git-scm3.png "Set format for line endings")
+  * Default setting is fine
 
 
 
