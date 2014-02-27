@@ -12,27 +12,23 @@
   ![click Generate](images/puttygen1.png "click Generate")
   
   - click **Generate**
-  - click *Save private key**, and store your key somewhere safe.
+  - click **Save private key**, and store your key somewhere safe.
   - select the public key in the text area, and copy to the clipboard
   
   ![copy public key to clipboard](images/puttygen3.png "select the public key in the text area, and copy to the clipboard")
 
 
-4. Add your SSH key to your Springloops account
+4. Add the SSH key to your Springloops account
   
-  - log into [https://duplo.springloops.io](Springloops) and open your profile page
+  - log into [Springloops](https://duplo.springloops.io) and open your profile page
   - click "edit" (top right of the page)
   - click "Profile details" in the top left menu
   - scroll down to SSH Public Key, and click "Manage"
   - click "Add a new SSH key"
   - paste in your key, and click "Create this new key"
 
-5. [https://code.google.com/p/tortoisegit/wiki/Download](Download) and install TortoiseGIT (Optional)
+5. [Download](https://code.google.com/p/tortoisegit/wiki/Download) and install TortoiseGIT (Optional)
 
-  - 
-
-
-* 
 
 
 
