@@ -90,6 +90,8 @@
 <P><EM>Optional</EM> <A HREF="https://code.google.com/p/tortoisegit/wiki/Download" TARGET="git_duplo_dl">Download</A>
 and install TortoiseGIT (Optional)</P>
 <UL>
+	<LI><P>Select next with all default options 
+	</P>
 	<LI><P>This is the easiest way to configure SSH 
 	</P>
 </UL>
@@ -114,12 +116,27 @@ Git</A> has built-in support for Git-flow</P>
 	<PRE CLASS="western" STYLE="margin-bottom: 0.5cm"><CODE CLASS="western">git clone --recursive https://github.com/nvie/gitflow.git</CODE></PRE>
 	<LI><P>Install git-flow extension</P>
 	<PRE CLASS="western"><CODE CLASS="western">cd gitflow</CODE>
-<CODE CLASS="western">contrib\msysgit-install.cmd</CODE></PRE>
+<CODE CLASS="western">contrib\msysgit-install.cmd "C:\Program Files (x86)\Git"</CODE></PRE>
+	<p>(change path above to the path where you installed Git)</p>
 </OL>
 <H4 CLASS="western">Clone the easyad2 repo from Springloops:</H4>
 <P>Open a Command Prompt, and navigate to the root of your work
 folder</P>
-<PRE CLASS="western" STYLE="margin-bottom: 0.5cm"><CODE CLASS="western">  </CODE><CODE CLASS="western">git clone ssh://sls@slsapp.com:1234/duplo/easyad2.git easyad</CODE></PRE><P>
+<PRE CLASS="western" STYLE="margin-bottom: 0.5cm"><CODE CLASS="western">  </CODE><CODE CLASS="western">git clone ssh://sls@slsapp.com:1234/duplo/easyad2.git easyad</CODE></PRE>
+<p>
+	OR<br>
+	<ul>
+		<li>6. Go to your localhost root folder, right click and choose Git clone...</li>
+		<li>6.1 Enter repo url ssh://sls@slsapp.com:1234/duplo/easyad2.git</li>
+		<li>6.2 Set local folder (change easyad2 to easyad)</li>
+		<li>6.3 Load puttykey and find the key you generated in step 3.</li>
+		<li>6.4 Click Ok, enter your ssh key passprase if prompted.</li>
+		<li>6.5 Click Yes/Ja if prompted.</li>
+		<li>6.6 Go to 7 while waiting</li>
+	</ul>
+</p>
+
+<P>
 Initialize as git-flow repository</P>
 <PRE CLASS="western"><CODE CLASS="western">  </CODE><CODE CLASS="western">cd easyad</CODE>
 <CODE CLASS="western">  </CODE><CODE CLASS="western">git flow init</CODE></PRE><P>
